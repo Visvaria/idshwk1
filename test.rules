@@ -1,2 +1,2 @@
- pass icmp !10.168.0.0/16 any -> 10.168.0.0/16 any (dsize:>65536;)
- 
+ pass tcp any any -> 10.168.0.0/16 8080 (flags:A;sid:1000001;content:"I|20|am|20|IDS|20|Homework|20|I";offset:99;depth:100;msg:"TEST ALERT")
+ (
